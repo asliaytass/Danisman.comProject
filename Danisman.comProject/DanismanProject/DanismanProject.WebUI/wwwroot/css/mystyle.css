@@ -1,0 +1,356 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+nav {
+    min-height: 80px;
+}
+#logo-left {
+    font-family: 'Righteous', cursive;
+    color: #c56cf0;
+    font-size:25pt;
+}
+
+#logo-right {
+    font-family: 'Righteous', cursive;
+    color: #48dbfb;
+    font-size: 25pt;
+}
+
+.right-menu :hover {
+    color: #48dbfb;
+}
+
+.collapse {
+    justify-content: end !important;
+}
+
+.slider-yazi, .slider-buton {
+    color: #ecf0f1;
+}
+
+carousel-inner img {
+    max-height: 815px;
+}
+
+.slider-buton {
+    background-color: #c56cf0;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+}
+
+.slider-buton:hover {
+    background-color: #8e44ad;
+}
+
+.homepage-ınfo {
+    color: #48dbfb;
+}
+
+.footer {
+    min-height: 100px;
+}
+
+.facebook {
+    color: #0984e3;
+}
+
+.twitter {
+    color: #74b9ff;
+}
+
+.instagram {
+    color: #fd79a8;
+}
+
+.linkedin {
+    color: #0984e3;
+}
+
+.youtube {
+    color: #d63031;
+}
+
+.footer-text {
+    font-size: 13px;
+}
+
+/* danismanlik.html içindeki butonlara işlem yapılacak */
+.danismanlik {
+    background-color: #f5f6fa;
+}
+
+.yan-buton {
+    background-color: white;
+    border-radius: 20px;
+}
+
+    .yan-buton:hover {
+        background-color: #c56cf0;
+    }
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700|Playfair+Display");
+.card-section {
+    background-image: linear-gradient(-45deg, #eef0f3 0%, #f6f5f3 100%);
+    font-size: 62.5%;
+    user-select: none;
+    transition: 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+}
+
+.paper {
+    margin: 10vh auto;
+    min-width: 20vw;
+    max-width: 90vh;
+    min-height: 40vh;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+    transition: 0.6s ease;
+    background: white;
+    text-align: center;
+}
+
+    .paper:hover {
+        box-shadow: 0 18px 35px rgba(50, 50, 90, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
+        transform: translateY(-2px);
+    }
+
+.paper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.poster {
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 2vh;
+}
+
+.paper h1 {
+    font-size: 2.6rem;
+    color: #303336;
+    letter-spacing: 1px;
+    margin: 1vh 4vw;
+    /*font-family: "Playfair Display", serif;*/
+}
+
+.paper h2 {
+    font-size: 0.4rem;
+    color: #a0a6ab;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /*font-family: "Open Sans", sans-serif;*/
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.paper hr {
+    width: 20%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    border: 0;
+    border-bottom: 1px solid #e6e9ec;
+}
+
+.paper p {
+    margin: 2vh 4vw;
+    text-align: center;
+    padding-bottom: 1vh;
+    color: #a0a6ab;
+    /*font-family: "Playfair Display", serif;*/
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+}
+
+.btn,
+a.btn {
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 20px;
+    border-radius: 8px;
+    padding: 1vh 2vh;
+    letter-spacing: 0.02rem;
+    background: #48dbfb;
+    color: white;
+    box-shadow: 0 0px 0px rgba(48, 51, 54, 0.1), 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+    .btn,
+    a.btn:hover {
+        background: #c56cf0;
+        box-shadow: 0 7px 14px rgba(48, 51, 54, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+        transform: translateY(-2px);
+    }
+
+    .btn,
+    a.btn:active {
+        box-shadow: 0 4px 6px rgba(48, 51, 54, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+        transform: translateY(2px);
+    }
+
+.space {
+    height: 4vh;
+}
+
+
+.advisor-img{
+    background-color:pink;
+    width:50px;
+    height:20px;
+}
+
+
+
+/*JOBDETAİL SAYFASI İÇİN*/
+
+.container-jobdetail-body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+
+.container-jobdetail {
+    position: relative;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #c8d6e5;
+    /* Need to play around with z-index more with backgrounds*/
+    z-index: 0;
+}
+
+.container-jobdetail .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px 0;
+}
+
+.container-jobdetail .card:nth-child(odd) {
+    flex-direction: row;
+}
+
+.container-jobdetail .card:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.container-jobdetail .card .imgBx {
+    position: relative;
+    left: 25px;
+    width: 400px;
+    height: 400px;
+    background: #ff0;
+    z-index: 1;
+}
+
+.container-jobdetail .card:nth-child(even) .imgBx {
+    left: -25px;
+}
+
+.container-jobdetail .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-jobdetail .card .contentBx {
+    position: relative;
+    right: 25px;
+    width: 400px;
+    height: 400px;
+    background: #f19066;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px 20px 100px;
+}
+
+.container-jobdetail .card:nth-child(even) .contentBx {
+    right: -25px;
+    padding: 20px 100px 20px 60px;
+}
+
+.container-jobdetail .card .contentBx:before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background: #f19066;
+    z-index: -1;
+}
+
+.container-jobdetail .card .contentBx h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.container-jobdetail .card .contentBx p {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.container-jobdetail .card .contentBx a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+@media (max-width: 1000px) {
+    .container-jobdetail .card {
+        flex-direction: column;
+        max-width: 350px;
+        margin: 25px 25px;
+    }
+
+        .container-jobdetail .card .imgBx {
+            width: 100%;
+            height: 250px;
+            left: 0;
+        }
+
+        .container-jobdetail .card .contentBx {
+            width: 100%;
+            height: auto;
+            right: 0;
+            padding: 30px;
+            text-align: center;
+        }
+
+            .container-jobdetail .card .contentBx:before {
+                top: 0;
+                bottom: 0;
+            }
+
+        .container-jobdetail .card:nth-child(even) .imgBx {
+            left: 0;
+        }
+
+        .container-jobdetail .card:nth-child(even) .contentBx {
+            right: 0;
+            padding: 30px;
+        }
+}

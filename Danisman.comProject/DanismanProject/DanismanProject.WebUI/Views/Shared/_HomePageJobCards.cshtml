@@ -1,0 +1,13 @@
+﻿@model Job
+    
+        <div class="paper">
+            <img class="poster " src="~/img/@Model.JobImg" />
+
+            <h1>@Model.JobName</h1>
+            <hr />
+            <p>@Model.JobDescription</p><a asp-controller="JobDetailController" asp-action="Index" class="btn">Hemen Danışın</a>
+            <div class="space"></div>
+        </div>
+
+    
+

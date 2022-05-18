@@ -1,0 +1,24 @@
+﻿@model List<Job>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*SLIDERIN OLDUĞU KISIM*@
+<partial name="_HomePageSlider" />
+@*SLIDERIN OLDUĞU KISIM*@
+
+<section>
+    @*SLIDER ALTINDA BULUNAN 3 BİLGİLENDİRME METNİNİN OLDUĞU KISIM*@
+    <partial name="_HomePageInfoCards" />
+    @*SLIDER ALTINDA BULUNAN 3 BİLGİLENDİRME METNİNİN OLDUĞU KISIM*@
+
+
+    @*MESLEKLERİN AÇIKLANDIĞI KART BÖLÜMÜ*@  
+   <div class="card-section">
+        @foreach (var job in Model)
+        {          
+            <partial name="_HomePageJobCards" model="job" />            
+        }
+    </div>
+    @*MESLEKLERİN AÇIKLANDIĞI KART BÖLÜMÜ*@
+</section>

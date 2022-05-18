@@ -1,0 +1,12 @@
+C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Entity\bin\Debug\net5.0\DanismanProject.Entity.deps.json
+C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Entity\bin\Debug\net5.0\DanismanProject.Entity.dll
+C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Entity\bin\Debug\net5.0\ref\DanismanProject.Entity.dll
+C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Entity\bin\Debug\net5.0\DanismanProject.Entity.pdb
+C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Entity\obj\Debug\net5.0\DanismanProject.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Entity\obj\Debug\net5.0\DanismanProject.Entity.AssemblyInfoInputs.cache
+C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Entity\obj\Debug\net5.0\DanismanProject.Entity.AssemblyInfo.cs
+C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Entity\obj\Debug\net5.0\DanismanProject.Entity.csproj.CoreCompileInputs.cache
+C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Entity\obj\Debug\net5.0\DanismanProject.Entity.dll
+C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Entity\obj\Debug\net5.0\ref\DanismanProject.Entity.dll
+C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Entity\obj\Debug\net5.0\DanismanProject.Entity.pdb
+C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Entity\obj\Debug\net5.0\DanismanProject.Entity.csproj.AssemblyReference.cache

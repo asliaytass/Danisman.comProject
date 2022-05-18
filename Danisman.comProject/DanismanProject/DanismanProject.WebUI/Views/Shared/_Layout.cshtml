@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DanismanProject.WebUI</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/mystyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    @*NAVBAR BAŞLANGIÇ*@
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid mx-5 d-flex justify-content-between">
+            <div>
+                <a class="navbar-brand fs-2" id="logo" href="#">
+                    <span id="logo-left">Danışman</span><span id="logo-right">.com</span>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link mx-2  " aria-current="page" href="#">
+                            <i class="fa-solid fa-user"></i> Giriş
+                            yap
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link mx-2 " aria-current="page" href="#">Üye ol</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Yardım & İletişim</a>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    @*NAVBAR BİTİŞ*@
+
+
+    <div >
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @*FOOTER BAŞLANGIÇ*@
+    <footer>
+        <div class="container mt-2 d-flex flex-column justify-content-center w-50 mx-auto">
+            <div class="d-flex justify-content-between w-75 text-center mx-auto">
+                <a class="text-decoration-none text-black">Hakkımızda</a>
+                <a class="text-decoration-none text-black">Kullanım Şartları</a>
+                <a class="text-decoration-none text-black">Gizlilik</a>
+                <a class="text-decoration-none text-black">İletişim</a>
+            </div>
+
+            <div class="d-flexjustify-content-center w-50 text-center mx-auto mt-4">
+                <i class="fa-brands fa-facebook facebook fs-2 me-3"></i>
+                <i class="fa-brands fa-twitter-square twitter fs-2 me-3"></i>
+                <i class="fa-brands fa-instagram instagram fs-2 me-3"></i>
+                <i class="fa-brands fa-linkedin-in linkedin fs-2 me-3"></i>
+                <i class="fa-brands fa-youtube youtube fs-2"></i>
+            </div>
+            <div class="d-flex justify-content-between text-center mx-auto mt-3">
+                <i class="fa-brands fa-cc-mastercard fs-1 me-2"></i>
+                <i class="fa-brands fa-cc-visa fs-1"></i>
+            </div>
+            <div class=" d-flex  justify-content-center w-100 text center mt-3">
+                <p class="text center footer-text">© 2018 - 2021 Bu sitenin tüm kullanımı ve servisleri Kullanım Sözleşmesi ve Gizlilik Politikası çerçevesindedir.</p>
+            </div>
+
+        </div>
+    </footer>
+    @*FOOTER BİTİŞ*@
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @*<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

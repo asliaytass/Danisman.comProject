@@ -9,5 +9,13 @@ namespace DanismanProject.Data.Abstract
 {
     public interface IAdvisorRepository: IRepository<Advisor>
     {
+        List<Advisor> GetAdvisorByCategory(string jobName);
+        Advisor GetAdvisorDetail(string advisorname);
+        void CreateAdvisor(Advisor entity);
+        Advisor GetByIdWithJobs(int id);
+        void Create(Advisor entity, int jobId);
+
+
+
     }
 }

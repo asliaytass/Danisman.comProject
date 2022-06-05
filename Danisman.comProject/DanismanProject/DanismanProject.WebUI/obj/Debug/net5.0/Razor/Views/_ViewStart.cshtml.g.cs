@@ -26,8 +26,43 @@ using DanismanProject.Entity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.WebUI\Views\_ViewImports.cshtml"
+using DanismanProject.WebUI.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.WebUI\Views\_ViewImports.cshtml"
+using Newtonsoft.Json;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.WebUI\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.WebUI\Views\_ViewImports.cshtml"
+using DanismanProject.WebUI.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.WebUI\Views\_ViewImports.cshtml"
+using DanismanProject.Core;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a1d8c268e62733b53bad7de1e0d4d219910548cb", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0182077dd178c6e0b02d16efb7673dc389398c30", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

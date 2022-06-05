@@ -8,7 +8,17 @@ using System.Threading.Tasks;
 
 namespace DanismanProject.Data.Concrete.EfCore
 {
-    public class EfCoreJobRepository : EfCoreGenericRepository<Job,DanismanContext>, IJobRepository
+    public class EfCoreJobRepository : EfCoreGenericRepository<Job, DanismanContext>, IJobRepository
     {
+       
+
+        public Job GetJobDetail(string jobName)
+        {
+            using (var context = new DanismanContext())
+            {
+                return context.Jobs.Where(i => i.JobName == jobName).FirstOrDefault();
+                   
+            }
+        }
     }
 }

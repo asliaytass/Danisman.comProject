@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32413.511
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanismanProject.WebUI", "DanismanProject.WebUI\DanismanProject.WebUI.csproj", "{AF4FE17E-4B36-4B6C-915E-AA5D79D0E57D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanismanProject.WebUI", "DanismanProject.WebUI\DanismanProject.WebUI.csproj", "{AF4FE17E-4B36-4B6C-915E-AA5D79D0E57D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanismanProject.Entity", "DanismanProject.Entity\DanismanProject.Entity.csproj", "{795C4104-9548-4221-BACA-E2A728E1B86F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanismanProject.Entity", "DanismanProject.Entity\DanismanProject.Entity.csproj", "{795C4104-9548-4221-BACA-E2A728E1B86F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanismanProject.Data", "DanismanProject.Data\DanismanProject.Data.csproj", "{1B265820-6441-44B3-B40F-447D21DC8D4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanismanProject.Data", "DanismanProject.Data\DanismanProject.Data.csproj", "{1B265820-6441-44B3-B40F-447D21DC8D4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanismanProject.Business", "DanismanProject.Business\DanismanProject.Business.csproj", "{3A199C3F-40B8-4CB5-8A12-B39E1DE2FFD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanismanProject.Business", "DanismanProject.Business\DanismanProject.Business.csproj", "{3A199C3F-40B8-4CB5-8A12-B39E1DE2FFD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanismanProject.Core", "DanismanProject.Core\DanismanProject.Core.csproj", "{3449324C-FD82-4E5A-B4BA-91E62A7C9581}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3A199C3F-40B8-4CB5-8A12-B39E1DE2FFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A199C3F-40B8-4CB5-8A12-B39E1DE2FFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A199C3F-40B8-4CB5-8A12-B39E1DE2FFD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3449324C-FD82-4E5A-B4BA-91E62A7C9581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3449324C-FD82-4E5A-B4BA-91E62A7C9581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3449324C-FD82-4E5A-B4BA-91E62A7C9581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3449324C-FD82-4E5A-B4BA-91E62A7C9581}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

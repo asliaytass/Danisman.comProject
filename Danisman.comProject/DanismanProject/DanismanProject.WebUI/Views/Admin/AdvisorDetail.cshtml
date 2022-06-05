@@ -1,0 +1,95 @@
+﻿
+@model Advisor
+
+<div class="container">
+
+    <div class="mt-4 mb-4">
+
+        <div class="mb-3 ">
+            <img class="rounded-pill" style="max-width:200px; max-height:200px" src="~/img/@Model.AdvisorImg" />
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-12">
+
+                <div class="mb-3 mt-3">
+                    <label class="form-label font-weight-bold fs-5  ">Ad </label> <br />
+                    <label class="fs-5">@Model.AdvisorName</label>
+
+                </div>
+                <div class="mb-3 mt-3">
+                    <label class="form-label font-weight-bold fs-5  ">Soyad </label> <br />
+                    <label class="fs-5">@Model.AdvisorSurname</label>
+
+                </div>
+                <div class="mb-3">
+                    <label class="form-label font-weight-bold fs-5">E-Mail</label><br />
+                    <label class="fs-5">@Model.AdvisorMail</label>
+
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label font-weight-bold fs-5">Telefon Numarası</label><br />
+                    <label class="fs-5">@Model.AdvisorPhone</label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label font-weight-bold fs-5">Doğum Tarihi</label><br />
+                    <label class="fs-5">@Model.AdvisorDateOfBirth</label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label font-weight-bold fs-5">Danışman Hakkında</label><br />
+                    <label class="fs-5">@Model.AdvisorAbout</label>
+                </div>
+
+
+
+
+            </div>
+            <div class="col-md-6 col-12">
+
+                <div class="mb-3 mt-3">
+                    <label class="form-check-label font-weight-bold fs-5">Uygunluk Durumu</label><br />
+                    @if (Model.IsSuitable == true)
+                    {
+                        <label class="fs-5">Uygun</label>
+
+                    }
+                    else
+                    {
+                        <label class="fs-5">Uygun Değil</label>
+
+                    }
+                </div>
+                <div class="mb-3 mt-3">
+                    <label class="form-check-label font-weight-bold fs-5">Başarı Oranı</label><br />
+                    <label>%@Model.SuccessRate</label>
+                </div>
+                @if (Model.Job != null)
+                {
+                    <div class="mb-3 mt-3">
+                        <label class="form-check-label font-weight-bold fs-5">Uzmanlık Alanı</label><br />
+                        <label>@Model.Job.JobName</label>
+                    </div>
+                }
+                <div class="mb-3 mt-3">
+                    <label class="form-check-label font-weight-bold fs-5">Onaylı Olma Durumu </label><br />
+                    @if (@Model.IsApproved)
+                    {
+                        <label>Onaylı</label>
+                    }
+                    else
+                    {
+                        <label>Onaylı Değil</label>
+                    }
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+

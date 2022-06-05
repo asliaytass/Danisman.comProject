@@ -1,0 +1,77 @@
+﻿@model List<Advisor>
+
+    <div class="container mt-4">
+        <div class="d-flex flex-column">
+            <h3 class="display-4">Danışmanlar</h3>
+        </div>
+        <hr />
+
+        <div class=" container mt-4">
+            <div class="row">
+
+
+                @foreach (var advisor in Model)
+                {
+                <div class=" col-xl-4 col-md-6  col-12">
+                    @if (advisor.IsApproved == true)
+                    {
+                        <div class="card text-dark bg-light my-4 shadow advisor-card-foradmin" style="width: 21rem;">
+
+                            <div class="card-header d-flex justify-content-between">
+                                <a asp-controller="Admin" asp-action="AdvisorEdit" asp-route-id="@advisor.AdvisorId">
+                                    <i class="fa-solid fa-gear text-secondary fs-5 "></i>
+                                </a>
+                                <a asp-controller="Admin" asp-action="AdvisorDelete" asp-route-id="@advisor.AdvisorId">
+                                    <i class="fa-solid fa-trash-can text-danger fs-5"></i>
+                                </a>
+                            </div>
+                            <a asp-controller="Admin" asp-action="AdvisorDetail" asp-route-id="@advisor.AdvisorId" class="text-decoration-none">
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center" style="min-height:140px">
+                                    @if (advisor.AdvisorImg == null)
+                                    {
+                                        <img class="rounded-pill small-advisor" src="~/img/null.jpg" />
+                                    }
+                                    else
+                                    {
+                                        <img class="rounded-pill small-advisor" src="~/img/@advisor.AdvisorImg" />
+                                    }
+                                    <h5 class="card-title fw-bold fs-3 text-center mt-1" style="color:#2c3e50;">@advisor.AdvisorName @advisor.AdvisorSurname</h5>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="card text-dark bg-warning my-4 shadow advisor-card-foradmin" style="width: 21rem;">
+
+                            <div class="card-header d-flex justify-content-between">
+                                <a asp-controller="Admin" asp-action="AdvisorEdit" asp-route-id="@advisor.AdvisorId">
+                                    <i class="fa-solid fa-gear text-secondary fs-5 "></i>
+                                </a>
+                                <p class="fw-bold">Onaylı olmayan üye</p>
+                                <a asp-controller="Admin" asp-action="AdvisorDelete" asp-route-id="@advisor.AdvisorId">
+                                    <i class="fa-solid fa-trash-can text-danger fs-5"></i>
+                                </a>
+                            </div>
+                            <a href="/admin/advisordetail?id=@advisor.AdvisorId"  class="text-decoration-none">
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center" style="min-height:140px">
+                                    @if (advisor.AdvisorImg == null)
+                                    {
+                                        <img class="rounded-pill small-advisor" src="~/img/null.jpg" />
+                                    }
+                                    else
+                                    {
+                                        <img class="rounded-pill small-advisor" src="~/img/@advisor.AdvisorImg" />
+                                    }
+                                <h5 class="card-title fw-bold fs-3 text-center mt-1" style="color:#2c3e50;">@advisor.AdvisorName @advisor.AdvisorSurname</h5>
+                                </div>
+                            </a>
+                        </div>
+                    }
+
+                </div>
+
+                }
+            </div>
+        </div>
+    </div>

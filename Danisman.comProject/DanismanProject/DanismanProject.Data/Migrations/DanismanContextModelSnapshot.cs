@@ -22,30 +22,40 @@ namespace DanismanProject.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("AdvisorNameSurname")
+                    b.Property<string>("AdvisorAbout")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("INTEGER");
+                    b.Property<DateTime>("AdvisorDateOfBirth")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("AdvisorImg")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("AdvisorMail")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("AdvisorName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("AdvisorPhone")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("AdvisorSurname")
+                        .HasColumnType("TEXT");
 
                     b.Property<bool>("IsApproved")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("IsHome")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("IsSuitable")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("JobId")
+                    b.Property<int>("JobId")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("SuccessRate")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("AdvisorId");
-
-                    b.HasIndex("CategoryId");
 
                     b.HasIndex("JobId");
 
@@ -58,12 +68,6 @@ namespace DanismanProject.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("CategoryDescription")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("CategoryImg")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("CategoryName")
                         .HasColumnType("TEXT");
 
@@ -72,29 +76,26 @@ namespace DanismanProject.Data.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("DanismanProject.Entity.Content", b =>
+            modelBuilder.Entity("DanismanProject.Entity.ContactMessage", b =>
                 {
-                    b.Property<int>("ContentId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("ContentImg")
+                    b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ContentName")
+                    b.Property<string>("Email")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ContentText")
+                    b.Property<string>("Message")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("ContentId");
+                    b.Property<string>("Phone")
+                        .HasColumnType("TEXT");
 
-                    b.HasIndex("CategoryId");
+                    b.Property<string>("Surname")
+                        .HasColumnType("TEXT");
 
-                    b.ToTable("Contents");
+                    b.HasKey("Name");
+
+                    b.ToTable("ContactMessages");
                 });
 
             modelBuilder.Entity("DanismanProject.Entity.Job", b =>
@@ -120,120 +121,20 @@ namespace DanismanProject.Data.Migrations
                     b.ToTable("Jobs");
                 });
 
-            modelBuilder.Entity("DanismanProject.Entity.Subcategory", b =>
-                {
-                    b.Property<int>("SubcategoryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("SubcategoryName")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("SubcategoryId");
-
-                    b.HasIndex("CategoryId");
-
-                    b.ToTable("Subcategories");
-                });
-
-            modelBuilder.Entity("DanismanProject.Entity.SubcategoryAdvisor", b =>
-                {
-                    b.Property<int>("AdvisorId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("SubcategoryId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("AdvisorId", "SubcategoryId");
-
-                    b.HasIndex("SubcategoryId");
-
-                    b.ToTable("SubcategoryAdvisors");
-                });
-
             modelBuilder.Entity("DanismanProject.Entity.Advisor", b =>
                 {
-                    b.HasOne("DanismanProject.Entity.Category", "Category")
-                        .WithMany("Advisors")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("DanismanProject.Entity.Job", "Job")
                         .WithMany("Advisors")
-                        .HasForeignKey("JobId");
-
-                    b.Navigation("Category");
+                        .HasForeignKey("JobId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Job");
-                });
-
-            modelBuilder.Entity("DanismanProject.Entity.Content", b =>
-                {
-                    b.HasOne("DanismanProject.Entity.Category", "Category")
-                        .WithMany("Contents")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("DanismanProject.Entity.Subcategory", b =>
-                {
-                    b.HasOne("DanismanProject.Entity.Category", "Category")
-                        .WithMany("Subcategories")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("DanismanProject.Entity.SubcategoryAdvisor", b =>
-                {
-                    b.HasOne("DanismanProject.Entity.Advisor", "Advisor")
-                        .WithMany("SubcategoryAdvisors")
-                        .HasForeignKey("AdvisorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DanismanProject.Entity.Subcategory", "Subcategory")
-                        .WithMany("SubcategoryAdvisors")
-                        .HasForeignKey("SubcategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Advisor");
-
-                    b.Navigation("Subcategory");
-                });
-
-            modelBuilder.Entity("DanismanProject.Entity.Advisor", b =>
-                {
-                    b.Navigation("SubcategoryAdvisors");
-                });
-
-            modelBuilder.Entity("DanismanProject.Entity.Category", b =>
-                {
-                    b.Navigation("Advisors");
-
-                    b.Navigation("Contents");
-
-                    b.Navigation("Subcategories");
                 });
 
             modelBuilder.Entity("DanismanProject.Entity.Job", b =>
                 {
                     b.Navigation("Advisors");
-                });
-
-            modelBuilder.Entity("DanismanProject.Entity.Subcategory", b =>
-                {
-                    b.Navigation("SubcategoryAdvisors");
                 });
 #pragma warning restore 612, 618
         }

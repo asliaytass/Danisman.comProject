@@ -36,6 +36,11 @@ namespace DanismanProject.Business.Concrete
             throw new NotImplementedException();
         }
 
+        public Job GetJobDetail(string jobName)
+        {
+            return _jobRepository.GetJobDetail(jobName);
+        }
+
         public void Update(Job entity)
         {
             throw new NotImplementedException();

@@ -1,0 +1,62 @@
+﻿@model Job
+
+<div class="container-fluid d-flex justify-content-between mt-5">
+    <div class=" row">
+        <div class=" col-12 col-xl-6 ">
+            <div class=" w-100  col">
+                <img class="w-100" src="~/img/@Model.JobImg" alt="">
+            </div>
+        </div>
+        <div class=" col-12 col-xl-6 ">
+            <div class="w-100 d-flex justify-content-center align-items-center">
+                <div class="w-75 mt-2">
+                    <h2 class="job-name">@Model.JobName</h2>
+                    <p class="job-content"> @Model.JobDescription</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="advisor-card-body d-flex justify-content-center align-items-center mt-5">
+    @foreach (var item in (List<Advisor>)ViewBag.Advisors)
+    {
+        <figure class="snip0042 yellow mx-4">
+            <figcaption>
+                <h2>@item.AdvisorName @item.AdvisorSurname</h2>
+                <div class="info">
+                    @if (@item.IsSuitable)
+                    {
+                        <p class="d-inline">Uygun  </p><i class="fa-solid fa-circle-check text-success"></i>
+                    }
+                    else
+                    {
+                        <p>Uygun Değil </p><i class="fa-solid fa-circle-xmark text-danger"></i>
+                    }
+                    <p>%@item.SuccessRate Başarı oranı</p>
+                    <a class="text-decoration-none hemen-danisin-button" asp-controller="Home" asp-action="AdvisorPage" asp-route-advisorname="@item.AdvisorName">Hemen Danışın</a>
+
+                </div>
+
+            </figcaption>
+            @if (item.AdvisorImg == null)
+            {
+                <img src="~/img/null.jpg" />
+            }
+            else
+            {
+                <img src="~/img/@item.AdvisorImg" />
+
+            }
+        </figure>
+
+
+    }
+</div>
+
+
+

@@ -19,12 +19,32 @@ namespace DanismanProject.Business.Concrete
 
         public void Create(Advisor entity)
         {
-            throw new NotImplementedException();
+            _advisorRepository.Create(entity);
+        }
+
+        public void Create(Advisor entity, int jobId)
+        {
+            _advisorRepository.Create(entity,jobId);
+        }
+
+        public void CreateAdvisor(Advisor entity)
+        {
+            _advisorRepository.CreateAdvisor(entity);
         }
 
         public void Delete(Advisor entity)
         {
-            throw new NotImplementedException();
+            _advisorRepository.Delete(entity);
+        }
+
+        public List<Advisor> GetAdvisorByCategory(string jobName)
+        {
+            return _advisorRepository.GetAdvisorByCategory(jobName);
+        }
+
+        public Advisor GetAdvisorDetail(string advisorname)
+        {
+            return _advisorRepository.GetAdvisorDetail(advisorname);
         }
 
         public List<Advisor> GetAll()
@@ -34,12 +54,17 @@ namespace DanismanProject.Business.Concrete
 
         public Advisor GetById(int id)
         {
-            throw new NotImplementedException();
+            return _advisorRepository.GetById(id);
+        }
+
+        public Advisor GetByIdWithJobs(int id)
+        {
+            return _advisorRepository.GetByIdWithJobs(id);
         }
 
         public void Update(Advisor entity)
         {
-            throw new NotImplementedException();
+            _advisorRepository.Update(entity);
         }
     }
 }

@@ -1,0 +1,81 @@
+﻿@model ContactMessage
+<div class="container-fluid">
+    <div class="container mt-4">
+        <div class="d-flex justify-content-end">
+            @if (!User.Identity.IsAuthenticated)
+            {
+                <a asp-controller="Account" asp-action="Register" class=" danismanlik-yapin btn btn-lg text-black-50 justify-content-end">Danışmanlık Yapın</a>
+
+            }
+            else
+            {
+                if (!User.IsInRole("Advisor"))
+                {
+                    <a asp-controller="Advisor" asp-action="AdvisorApplication" class=" danismanlik-yapin btn btn-lg text-black-50 justify-content-end">Danışmanlık Yapın</a>
+                }
+
+
+            }
+
+        </div>
+        <h3 class="mt-3 fw-bold">Danışman.com Hakkında</h3>
+        <p>
+            Danışman.com alanlarında profesyonel hizmet veren danışmanlar ile danışanları en kolay şekilde bir araya getiren global ölçekli “kişiye özel danışmanlık hizmeti” sağlayan, Singapur merkezli bir danışmanlık platformudur.
+
+            Danışmanlık hizmeti almak isteyenler, Danışmanya.com üzerinden bilgi almak istedikleri konular hakkında bulundukları yerden uzmanlarımızla yazılı, sesli ya da video görüntülü olarak iletişime geçerek en hızlı ve doğru cevaplara ulaşabilmektedir.
+
+            Her danışman, danışmanlık vermek istediği alanlarını ve hizmet bedelini kendi belirler, dolasıyla danışmanlar aslında kendi uzmanlık alanlarında Danışmanya.com platformunu kullanarak hizmet vermektedir.
+
+            Danışman.com sizlere uzmanlar ile eposta, chat, telefon ve video konferans seçenekleri ile hizmet almanıza olanak verir.
+
+            Danışman.com uzmanlarımızın da verdikleri hizmetin kalitesi oldukça adil bir şekilde danışmanlık verdikleri kişiler tarafından belirlenip sisteme yansıtılmaktadır. Danışmanya.com kurucuları olarak, bu global projenin ilk ayağını Türkiye’de başlatmaktan ve danışmanlar ile danışanları bir araya getirerek ihtiyaç duyduğunuz çözümleri en hızlı ve güvenilir şekilde sizlere sunmaktan mutluluk ve gurur duyuyoruz.
+
+
+            Sevgilerimiz ile,
+        </p>
+
+        <h3 class="mt-4 fw-bold">İletişim</h3>
+        <p>Barbaros Bulvarı Yıldız İş Hanı No: 9 Kat: 3 Beşiktaş - İstanbul</p>
+        
+
+        <div class="mt-5">
+            <div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                @ViewBag.msg
+                                <div>
+                                    <h2>Bize Yazın</h2>
+
+                                </div>
+                                <form asp-controller="Home" asp-action="HelpContact" method="post">
+
+                                    <div class="form-group">
+                                        <input asp-for="@Model.Name" type="text" class="form-control" placeholder="Ad*">
+                                    </div>
+                                    <div class="form-group">
+                                        <input asp-for="@Model.Surname" type="text" class="form-control" placeholder="Soyad*">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Mail*" asp-for="@Model.Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Telefon" asp-for="@Model.Phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" asp-for="@Model.Message" placeholder="Mesajınız" rows="7"></textarea>
+                                    </div>
+
+                                    <div>
+                                        <button type="submit" class="btn btn-lg btn-danger">Gönder</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

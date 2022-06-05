@@ -13,8 +13,6 @@ namespace DanismanProject.Entity
         public string JobDescription { get; set; }
         public string JobImg { get; set; }
         public string Url { get; set; }
-
-
         public List<Advisor> Advisors { get; set; }
     }
 }

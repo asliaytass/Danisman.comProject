@@ -28,13 +28,16 @@ nav {
     justify-content: end !important;
 }
 
-.slider-yazi, .slider-buton {
+.slider-yazi, .slider-buton a {
     color: #ecf0f1;
 }
+    .slider-buton a:hover {
+        color: #ecf0f1;
+    }
 
-carousel-inner img {
-    max-height: 815px;
-}
+    carousel-inner img {
+        max-height: 815px;
+    }
 
 .slider-buton {
     background-color: #c56cf0;
@@ -206,151 +209,308 @@ a.btn {
     width:50px;
     height:20px;
 }
+.danismanlik-yapin {
+    background: linear-gradient(#f3a683,#f19066);
+    border: none;
+}
 
 
 
 /*JOBDETAİL SAYFASI İÇİN*/
 
-.container-jobdetail-body {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #121212;
+.job-name {
+    color: #3c6382;
+    font-weight: 800;
+}
+.job-content{
+    font-size:1em;
 }
 
-.container-jobdetail {
-    position: relative;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #c8d6e5;
-    /* Need to play around with z-index more with backgrounds*/
-    z-index: 0;
+
+
+/*LOGİN CARD*/
+
+
+
+.login-box-body {
+    min-height:500px;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
 }
 
-.container-jobdetail .card {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 100px 0;
-}
-
-.container-jobdetail .card:nth-child(odd) {
-    flex-direction: row;
-}
-
-.container-jobdetail .card:nth-child(even) {
-    flex-direction: row-reverse;
-    text-align: right;
-}
-
-.container-jobdetail .card .imgBx {
-    position: relative;
-    left: 25px;
-    width: 400px;
-    height: 400px;
-    background: #ff0;
-    z-index: 1;
-}
-
-.container-jobdetail .card:nth-child(even) .imgBx {
-    left: -25px;
-}
-
-.container-jobdetail .card .imgBx img {
+.login-box {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.container-jobdetail .card .contentBx {
-    position: relative;
-    right: 25px;
+    top: 50%;
+    left: 50%;
     width: 400px;
-    height: 400px;
-    background: #f19066;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 60px 20px 100px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    background: linear-gradient(#c8d6e5,#130f40);
 }
 
-.container-jobdetail .card:nth-child(even) .contentBx {
-    right: -25px;
-    padding: 20px 100px 20px 60px;
-}
-
-.container-jobdetail .card .contentBx:before {
-    content: '';
-    position: absolute;
-    top: -50px;
-    bottom: -50px;
-    left: 0;
-    right: 0;
-    background: #f19066;
-    z-index: -1;
-}
-
-.container-jobdetail .card .contentBx h2 {
-    font-size: 30px;
-    color: #fff;
-}
-
-.container-jobdetail .card .contentBx p {
-    margin-top: 10px;
-    color: #fff;
-}
-
-.container-jobdetail .card .contentBx a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    border: 1px solid #fff;
-}
-
-@media (max-width: 1000px) {
-    .container-jobdetail .card {
-        flex-direction: column;
-        max-width: 350px;
-        margin: 25px 25px;
+    .login-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
     }
 
-        .container-jobdetail .card .imgBx {
+    .login-box .user-box {
+        position: relative;
+    }
+
+        .login-box .user-box input {
             width: 100%;
-            height: 250px;
-            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
         }
 
-        .container-jobdetail .card .contentBx {
+        .login-box .user-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .login-box .user-box input:focus ~ label,
+        .login-box .user-box input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #03e9f4;
+            font-size: 12px;
+        }
+
+    .login-box form button {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #03e9f4;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px
+    }
+
+    .login-box button:hover {
+        background: #03e9f4;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+    }
+
+    .login-box button span {
+        position: absolute;
+        display: block;
+    }
+
+        .login-box button span:nth-child(1) {
+            top: 0;
+            left: -100%;
             width: 100%;
-            height: auto;
-            right: 0;
-            padding: 30px;
-            text-align: center;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #03e9f4);
+            animation: btn-anim1 1s linear infinite;
         }
 
-            .container-jobdetail .card .contentBx:before {
-                top: 0;
-                bottom: 0;
-            }
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
 
-        .container-jobdetail .card:nth-child(even) .imgBx {
-            left: 0;
-        }
-
-        .container-jobdetail .card:nth-child(even) .contentBx {
-            right: 0;
-            padding: 30px;
-        }
+    50%,100% {
+        left: 100%;
+    }
 }
+
+.login-box button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,100% {
+        top: 100%;
+    }
+}
+
+.login-box button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,100% {
+        right: 100%;
+    }
+}
+
+.login-box button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,100% {
+        bottom: 100%;
+    }
+}
+
+
+
+
+
+/*ADVİSOR CARD*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+
+figure.snip0042 {
+    /*font-family: 'Raleway', Arial, sans-serif;*/
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #ffffff;
+    color: #ffffff;
+}
+figure.snip0042 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0042 > img {
+   /* max-width: 400px;
+    max-height:200px;*/
+    height:250px;
+    width:310px;
+   
+}
+figure.snip0042 figcaption {
+    padding: 20px 30px 20px 25%;
+    position: relative;
+}
+figure.snip0042 figcaption h2,
+figure.snip0042 figcaption p {
+    margin: 0;
+    text-align: right;
+    padding: 10px 0;
+    right: 0;
+    width: 100%;
+}
+figure.snip0042 figcaption p{
+    padding:0px;
+}
+figure.snip0042 figcaption h2 {
+    font-size: 1.3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+figure.snip0042 figcaption p {
+    font-size: 0.9em;    
+}
+figure.snip0042 figcaption a {       
+    color: #0a3d62;
+    font-size:1.2em;
+}
+figure.snip0042 figcaption a:hover {
+    cursor: pointer;
+    color:white;
+    
+}
+figure.snip0042 figcaption .info {
+    width: 100%;
+    text-align: right;
+}
+figure.snip0042:after {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    height: 110%;
+    width: 30%;
+    background-color: #000000;
+    content: '';
+    border-right: 4px solid #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: skewX(-7deg) translateX(0px);
+    transform: skewX(-7deg) translateX(0px);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+figure.snip0042.yellow {
+    background: #3c6382;
+}
+figure.snip0042.yellow:after {
+    background: #0a3d62;
+}
+figure.snip0042:hover:after,
+figure.snip0042.hover:after {
+    -webkit-transform: skewX(-7deg) translateX(10px);
+    transform: skewX(-7deg) translateX(10px);
+}
+.advisor-card-body {
+    flex-flow: wrap;
+    margin: 0;
+    height: 100%;
+}
+.success-rate {
+    color: #c56cf0;
+}
+.advisorname {
+    color: #48dbfb;
+    
+}
+.small-advisor{
+    width:80px;
+    height:80px;
+}
+
+
+
+

@@ -10,21 +10,15 @@ namespace DanismanProject.Data.Concrete.EfCore
 {
     public class DanismanContext : DbContext
     {
-        public DbSet<Advisor> Advisors { get; set; }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<Content> Contents { get; set; }
         public DbSet<Job> Jobs { get; set; }
-        public DbSet<Subcategory> Subcategories { get; set; }
-        public DbSet<SubcategoryAdvisor> SubcategoryAdvisors { get; set; }
-
+        public DbSet<Advisor> Advisors { get; set; }
+        public DbSet<ContactMessage> ContactMessages { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source= DanismanProjectDb");
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<SubcategoryAdvisor>().HasKey(sa => new { sa.AdvisorId, sa.SubcategoryId });
-        }
+      
     }
 }

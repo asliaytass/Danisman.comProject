@@ -1,0 +1,54 @@
+﻿@model Advisor
+
+
+
+<div class="container">
+    <h5 class="display-4 mt-2">Danışmanlık Başvurusu</h5>
+    <hr />
+    <form asp-controller="Advisor" asp-action="AdvisorApplication" method="post" class="mt-3">
+        <div class="mb-3">
+            <label class="form-label">Ad Soyad</label>
+            <input type="text" asp-for="AdvisorName" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ad Soyad</label>
+            <input type="text" asp-for="AdvisorSurname" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">E-Mail</label>
+            <input type="email" asp-for="AdvisorMail" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Telefon Numarası</label>
+            <input type="text" asp-for="AdvisorPhone" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Doğum Tarihi</label>
+            <input type="date" asp-for="AdvisorDateOfBirth" class="form-control">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" asp-for="IsSuitable">
+            <label class="form-check-label">Uygunluk Durumu</label>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Uzmanlık Alanı</label>
+            <div>
+                @foreach (var item in (List<Job>)ViewBag.Jobs)
+                {
+                    <div class="form-check">
+                        <input name="@item.JobName|JobId" type="checkbox" class="form-check-input" value="@item.JobId" />
+                        <label class="form-check-label"> @item.JobName</label>
+                    </div>
+
+                }
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+    </form>
+    </div>
+
+
+    

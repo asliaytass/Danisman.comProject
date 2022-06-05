@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.16">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -14,10 +15,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DanismanProject.Business\DanismanProject.Business.csproj" />
+    <ProjectReference Include="..\DanismanProject.Core\DanismanProject.Core.csproj" />
     <ProjectReference Include="..\DanismanProject.Data\DanismanProject.Data.csproj" />
     <ProjectReference Include="..\DanismanProject.Entity\DanismanProject.Entity.csproj" />
   </ItemGroup>

@@ -1,0 +1,58 @@
+﻿@model Advisor
+
+<div class="container-fluid">
+    <div class="row mx-3 mt-4">
+        <div class="col-md-3">
+            <div class="d-flex flex-column justify-content-center w-50 mx-auto">
+                @if (Model.AdvisorImg == null)
+                {
+                    <img class="rounded-pill" src="~/img/null.jpg" />
+                }
+                else
+                {
+                    <img class="rounded-pill" src="~/img/@Model.AdvisorImg" />
+
+                }
+                <div class="text-center mt-2">
+                    @if (@Model.IsSuitable)
+                    {
+                        <p class="d-inline">Uygun  </p><i class="fa-solid fa-circle-check text-success"></i>
+                    }
+                    else
+                    {
+                        <p>Uygun Değil </p><i class="fa-solid fa-circle-xmark text-danger"></i>
+                    }
+                </div>
+                <div class="text-center "> <span class="fs-5 fw-bold success-rate">%@Model.SuccessRate</span> Başarı</div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="d-flex justify-content-start flex-column py-2">
+                <div class="fs-3">
+
+                </div>
+                @if (Model.Job != null)
+                {
+                    <div class="fs-2 fw-bold  mt-3" style="color: #48dbfb;">@Model.Job.JobName.ToUpper()</div>
+
+                }
+                <div class="fs-3  text-dark mt-2">@Model.AdvisorName</div>
+
+                
+            </div>
+            <hr class="w-50"/>
+            <a class="btn btn-lg " >Danış</a>
+        </div>
+    </div>
+    <div class="m-5 px-2">
+        <div class="mx-5 mt-5 px-2 fs-2 fw-bold" style="color: #7f8c8d; "><p>Hakkımda</p></div>
+        <div class="mx-5 my-5 mt-2 px-2"> @Model.AdvisorAbout</div>
+       
+    </div>
+
+</div>
+
+
+
+
+

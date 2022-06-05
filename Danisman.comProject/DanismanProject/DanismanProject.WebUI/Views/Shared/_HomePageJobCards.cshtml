@@ -5,7 +5,8 @@
 
             <h1>@Model.JobName</h1>
             <hr />
-            <p>@Model.JobDescription</p><a asp-controller="JobDetailController" asp-action="Index" class="btn">Hemen Danışın</a>
+            <p>@Model.JobDescription</p>
+            <a asp-controller="Home" asp-action="JobDetail" asp-route-jobname="@Model.JobName" class="btn">Hemen Danışın</a>
             <div class="space"></div>
         </div>
 

@@ -1,0 +1,83 @@
+﻿<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid mx-5 d-flex justify-content-between">
+        <div>
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand fs-2" id="logo">
+                <span id="logo-left">Danışman</span><span id="logo-right">.com</span>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item ">
+                        <a asp-controller="Account" asp-action="Login" class="nav-link mx-2 " aria-current="page">
+                            <i class="fa-solid fa-user"></i> Giriş
+                            yap
+                        </a>
+                    </li>
+                }
+
+
+                else
+                {
+                    if (User.IsInRole("Admin"))
+                    {
+                       
+                       
+                        <li class="nav-item">
+                            <div class="dropdown show">
+                                <a class="btn btn-light text-dark dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    @User.Identity.Name
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Admin" asp-action="UserList">Kullanıcılar</a>
+                                    <a class="dropdown-item" asp-controller="Admin" asp-action="AdvisorList">Danışmanlar</a>
+                                    <a class="dropdown-item" href="/admin/rolelist">Roller</a>
+                                    <a class="dropdown-item" asp-controller="Admin" asp-action="MessageBox">Mesajlar</a>
+                                    <a href="/account/logout" class=" dropdown-item">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <div class="dropdown show">
+                                <a class="btn btn-light text-dark dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    @User.Identity.Name
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Advisor" asp-action="AdvisorMyAccount">Hesabım</a>
+                                    <a class="dropdown-item">Mesajlar</a>
+                                    <a href="/account/logout" class=" dropdown-item">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    }
+
+
+
+
+                }
+
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="HelpContact">Yardım & İletişim</a>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,34 @@
+﻿@model LoginModel
+
+<div class="container-fluid mt-5" >
+
+
+    <div class=" mb-5" style="min-height:600px;">
+        <div class="login-box">
+            <a asp-controller="Account" asp-action="Register" class="text-decoration-none">Üye değil misin?</a>
+            <h2>Login</h2>
+            <form asp-controller="Account" asp-action="Login" method="post">
+                <input type="hidden" name="ReturnUrl" value="@Model.ReturnUrl" />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="user-box">
+                    <input asp-for="UserName" type="text" />
+                    <label>Kullanıcı Adı</label>
+                </div>
+                <div class="user-box">
+                    <input asp-for="Password" type="password" >
+                    <label>Şifre</label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="border-0 bg-dark">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Giriş Yap
+                    </button>
+                    <a asp-controller="Account" asp-action="ForgotPassword" class="btn-block btn-link mt-3">Şifremi Unuttum</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

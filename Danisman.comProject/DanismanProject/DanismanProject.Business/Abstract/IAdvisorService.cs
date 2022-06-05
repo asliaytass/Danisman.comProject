@@ -14,5 +14,15 @@ namespace DanismanProject.Business.Abstract
         void Create(Advisor entity);
         void Update(Advisor entity);
         void Delete(Advisor entity);
+        List<Advisor> GetAdvisorByCategory(string jobName);
+        Advisor GetAdvisorDetail(string advisorname);
+        void CreateAdvisor(Advisor entity);
+        void Create(Advisor entity, int jobId);
+        Advisor GetByIdWithJobs(int id);
+
+
+
+
+
     }
 }

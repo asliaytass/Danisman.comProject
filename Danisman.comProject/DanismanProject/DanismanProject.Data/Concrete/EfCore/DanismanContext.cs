@@ -14,6 +14,7 @@ namespace DanismanProject.Data.Concrete.EfCore
         public DbSet<Job> Jobs { get; set; }
         public DbSet<Advisor> Advisors { get; set; }
         public DbSet<ContactMessage> ContactMessages { get; set; }
+    
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

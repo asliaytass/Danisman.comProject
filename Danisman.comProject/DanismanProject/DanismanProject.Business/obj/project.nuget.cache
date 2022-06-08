@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZFIxOvmGyATgLl0dYwa5NdG06xCRuZR/nfC0UkkZxFL+006TJuvl7VRPuzI4qCe22Uj/Sy4fLy12GfWNXffE1A==",
+  "dgSpecHash": "BsFpfre5PuhcVvaY6njqZsMblEWfS9TKK8TEW30SWQdkKobAKEFdB/BTqEi/yFiKGDj2SqVWUo0HYifJ1EGtzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Business\\DanismanProject.Business.csproj",
+  "projectFilePath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Business\\DanismanProject.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MONSTER\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\MONSTER\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

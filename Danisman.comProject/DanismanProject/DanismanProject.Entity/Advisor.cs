@@ -8,7 +8,7 @@ namespace DanismanProject.Entity
 {
     public class Advisor
     {
-        public int AdvisorId { get; set; }
+        public string AdvisorId { get; set; }
         public string AdvisorName { get; set; }
         public string AdvisorSurname { get; set; }      
         public string AdvisorMail { get; set; }       
@@ -19,10 +19,18 @@ namespace DanismanProject.Entity
         public int SuccessRate { get; set; }
         public bool IsSuitable { get; set; }
         public bool IsApproved { get; set; }
+        public int Price { get; set; }
+
+
+
 
 
         public int JobId { get; set; }
         public Job Job { get; set; }
+
+       
+
+
 
 
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KQmMAPKgqWujv0OFXyCsA4d9mRyRWqj7iDv2hv66o4eIHRrmk216Pe1KPw1jC5kE2u3KNLjArRDh3Bd+xkuPSw==",
+  "dgSpecHash": "fUlowvxWNKc1ukZE3pgFWVv3NNb9r7VyHxgqX8IMn7RP8GIkXVS/Rc5cUk3DPNrrQLkMV4cwnLO9iQjsOq6IFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj",
+  "projectFilePath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

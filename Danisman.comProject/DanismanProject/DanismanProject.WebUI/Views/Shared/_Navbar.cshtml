@@ -26,43 +26,46 @@
 
                 else
                 {
-                    if (User.IsInRole("Admin"))
-                    {
-                       
-                       
-                        <li class="nav-item">
-                            <div class="dropdown show">
-                                <a class="btn btn-light text-dark dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    @User.Identity.Name
-                                </a>
+                    //if (User.IsInRole("Admin"))
+                    //{
 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" asp-controller="Admin" asp-action="UserList">Kullanıcılar</a>
-                                    <a class="dropdown-item" asp-controller="Admin" asp-action="AdvisorList">Danışmanlar</a>
-                                    <a class="dropdown-item" href="/admin/rolelist">Roller</a>
-                                    <a class="dropdown-item" asp-controller="Admin" asp-action="MessageBox">Mesajlar</a>
-                                    <a href="/account/logout" class=" dropdown-item">Logout</a>
-                                </div>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="MyAccount" asp-action="Index">@User.Identity.Name</a>
                         </li>
-                    }
+
+                        @*<li class="nav-item">
+                    <div class="dropdown show">
+                        <a class="btn btn-light text-dark dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @User.Identity.Name
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" asp-controller="Admin" asp-action="UserList">Kullanıcılar</a>
+                            <a class="dropdown-item" asp-controller="Admin" asp-action="AdvisorList">Danışmanlar</a>
+                            <a class="dropdown-item" href="/admin/rolelist">Roller</a>
+                            <a class="dropdown-item" asp-controller="Admin" asp-action="MessageBox">Mesajlar</a>
+                            <a href="/account/logout" class=" dropdown-item">Logout</a>
+                        </div>
+                    </div>
+                </li>*@
+                    @*}
                     else
-                    {
-                        <li class="nav-item">
-                            <div class="dropdown show">
-                                <a class="btn btn-light text-dark dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    @User.Identity.Name
-                                </a>
+                    {*@
+                        @*<li class="nav-item">
+                    <div class="dropdown show">
+                        <a class="btn btn-light text-dark dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @User.Identity.Name
+                        </a>
 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" asp-controller="Advisor" asp-action="AdvisorMyAccount">Hesabım</a>
-                                    <a class="dropdown-item">Mesajlar</a>
-                                    <a href="/account/logout" class=" dropdown-item">Logout</a>
-                                </div>
-                            </div>
-                        </li>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" asp-controller="Advisor" asp-action="AdvisorMyAccount">Hesabım</a>
+                            <a class="dropdown-item">Mesajlar</a>
+                            <a href="/account/logout" class=" dropdown-item">Logout</a>
+                        </div>
+                    </div>
+                </li>*@
 
-                    }
+                    @*}*@
 
 
 

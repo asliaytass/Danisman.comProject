@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj",
       "projectName": "DanismanProject.Entity",
-      "projectPath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj",
+      "projectPath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj",
       "packagesPath": "C:\\Users\\MONSTER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Entity\\obj\\",
+      "outputPath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

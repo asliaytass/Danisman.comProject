@@ -18,9 +18,8 @@ namespace DanismanProject.Data.Migrations
 
             modelBuilder.Entity("DanismanProject.Entity.Advisor", b =>
                 {
-                    b.Property<int>("AdvisorId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("AdvisorId")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("AdvisorAbout")
                         .HasColumnType("TEXT");
@@ -50,6 +49,9 @@ namespace DanismanProject.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("JobId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Price")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("SuccessRate")

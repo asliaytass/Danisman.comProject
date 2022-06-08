@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Business\\DanismanProject.Business.csproj": {}
+    "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Business\\DanismanProject.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Business\\DanismanProject.Business.csproj": {
+    "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Business\\DanismanProject.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Business\\DanismanProject.Business.csproj",
+        "projectUniqueName": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Business\\DanismanProject.Business.csproj",
         "projectName": "DanismanProject.Business",
-        "projectPath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Business\\DanismanProject.Business.csproj",
+        "projectPath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Business\\DanismanProject.Business.csproj",
         "packagesPath": "C:\\Users\\MONSTER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Business\\obj\\",
+        "outputPath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -32,11 +32,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Data\\DanismanProject.Data.csproj": {
-                "projectPath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Data\\DanismanProject.Data.csproj"
+              "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Data\\DanismanProject.Data.csproj": {
+                "projectPath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Data\\DanismanProject.Data.csproj"
               },
-              "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj": {
-                "projectPath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj"
+              "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj": {
+                "projectPath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Data\\DanismanProject.Data.csproj": {
+    "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Data\\DanismanProject.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Data\\DanismanProject.Data.csproj",
+        "projectUniqueName": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Data\\DanismanProject.Data.csproj",
         "projectName": "DanismanProject.Data",
-        "projectPath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Data\\DanismanProject.Data.csproj",
+        "projectPath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Data\\DanismanProject.Data.csproj",
         "packagesPath": "C:\\Users\\MONSTER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Data\\obj\\",
+        "outputPath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -97,8 +97,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj": {
-                "projectPath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj"
+              "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj": {
+                "projectPath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj"
               }
             }
           }
@@ -157,14 +157,14 @@
         }
       }
     },
-    "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj": {
+    "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj",
         "projectName": "DanismanProject.Entity",
-        "projectPath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj",
+        "projectPath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Entity\\DanismanProject.Entity.csproj",
         "packagesPath": "C:\\Users\\MONSTER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MONSTER\\Desktop\\KURS\\DanismanSite\\DanismanSite_Backend\\DanismanProject\\DanismanProject.Entity\\obj\\",
+        "outputPath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

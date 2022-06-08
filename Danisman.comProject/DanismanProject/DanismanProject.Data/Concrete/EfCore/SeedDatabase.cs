@@ -21,10 +21,10 @@ namespace DanismanProject.Data.Concrete.EfCore
                 {
                     context.Jobs.AddRange(Jobs);
                 }
-                if (context.Advisors.Count() == 0)
-                {
-                    context.Advisors.AddRange(Advisors);
-                }
+                //if (context.Advisors.Count() == 0)
+                //{
+                //    context.Advisors.AddRange(Advisors);
+                //}
                
 
 
@@ -44,19 +44,19 @@ namespace DanismanProject.Data.Concrete.EfCore
                 "ya da hekime başvurmak için çekinebilirsiniz.Cinsel sorunlarınızın hayat kalitenizi düşürmesine izin vermeyin. İhmal edilen cinsel rahatsızlıkları, daha büyük sorunlara yol açmadan çözebilmeniz için alanında oldukça tecrübeli uzmanlarımıza istediğiniz zaman ulaşabilmeniz mümkün."}
         };
 
-        private static Advisor[] Advisors =
-        {
-            new Advisor() { AdvisorName="Gözde ",AdvisorSurname="Açıker",SuccessRate=85,AdvisorImg ="advisor1.jpg",IsSuitable=true ,IsApproved=true,Job=Jobs[0]},
-            new Advisor() { AdvisorName="Sinem ",AdvisorSurname="Taşkın",SuccessRate=95 , IsSuitable=true ,IsApproved=true,Job=Jobs[0]},
-            new Advisor() {AdvisorName="Begüm ",AdvisorSurname="Isı",SuccessRate=95 ,AdvisorImg ="advisor2.jpeg", IsSuitable=true ,IsApproved=true,Job=Jobs[1]},
-            new Advisor() {AdvisorName="Bilai ",AdvisorSurname="Çelik",SuccessRate=100 , IsSuitable=true ,IsApproved=true,Job=Jobs[1]},
-            new Advisor() {AdvisorName="Emel ",AdvisorSurname="Açıkel", SuccessRate=85 ,AdvisorImg ="advisor2.jpg", IsSuitable=true ,IsApproved=true,Job=Jobs[2]},
-            new Advisor() {AdvisorName="Hasan ",AdvisorSurname="Doğuş",SuccessRate=95 ,AdvisorImg ="advisor3.jpg", IsSuitable=true ,IsApproved=true,Job=Jobs[2]},
-            new Advisor() {AdvisorName="Nazan ",AdvisorSurname="Koç", SuccessRate=95, IsSuitable=true ,IsApproved=true,Job=Jobs[3]},
-            new Advisor() {AdvisorName="Asena ",AdvisorSurname="Özgen",SuccessRate=80, IsSuitable=true,IsApproved=true,Job=Jobs[3]},
-            new Advisor() {AdvisorName="İlhan ",AdvisorSurname="Yılmaz" ,SuccessRate=100, IsSuitable=true ,IsApproved=true,Job=Jobs[4]},
+        //private static Advisor[] Advisors =
+        //{
+        //    new Advisor() { AdvisorName="Gözde ",AdvisorSurname="Açıker",SuccessRate=85,AdvisorImg ="advisor1.jpg",IsSuitable=true ,IsApproved=true,Job=Jobs[0]},
+        //    new Advisor() { AdvisorName="Sinem ",AdvisorSurname="Taşkın",SuccessRate=95 , IsSuitable=true ,IsApproved=true,Job=Jobs[0]},
+        //    new Advisor() {AdvisorName="Begüm ",AdvisorSurname="Isı",SuccessRate=95 ,AdvisorImg ="advisor2.jpeg", IsSuitable=true ,IsApproved=true,Job=Jobs[1]},
+        //    new Advisor() {AdvisorName="Bilai ",AdvisorSurname="Çelik",SuccessRate=100 , IsSuitable=true ,IsApproved=true,Job=Jobs[1]},
+        //    new Advisor() {AdvisorName="Emel ",AdvisorSurname="Açıkel", SuccessRate=85 ,AdvisorImg ="advisor2.jpg", IsSuitable=true ,IsApproved=true,Job=Jobs[2]},
+        //    new Advisor() {AdvisorName="Hasan ",AdvisorSurname="Doğuş",SuccessRate=95 ,AdvisorImg ="advisor3.jpg", IsSuitable=true ,IsApproved=true,Job=Jobs[2]},
+        //    new Advisor() {AdvisorName="Nazan ",AdvisorSurname="Koç", SuccessRate=95, IsSuitable=true ,IsApproved=true,Job=Jobs[3]},
+        //    new Advisor() {AdvisorName="Asena ",AdvisorSurname="Özgen",SuccessRate=80, IsSuitable=true,IsApproved=true,Job=Jobs[3]},
+        //    new Advisor() {AdvisorName="İlhan ",AdvisorSurname="Yılmaz" ,SuccessRate=100, IsSuitable=true ,IsApproved=true,Job=Jobs[4]},
             
-        };   
+        //};   
 
     
 

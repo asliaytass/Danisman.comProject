@@ -3,7 +3,9 @@ using DanismanProject.Business.Concrete;
 using DanismanProject.Entity;
 using DanismanProject.WebUI.Identity;
 using DanismanProject.WebUI.Models;
+using DanismanProject.Core;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -21,14 +23,60 @@ namespace DanismanProject.WebUI.Controllers
         private RoleManager<IdentityRole> _roleManager;
         private UserManager<User> _userManager;
         private IContactMessageService _contactMessageService;
+        private IJobService _jobService;
 
-        public AdminController(IAdvisorService advisorService, RoleManager<IdentityRole> roleManager, UserManager<User> userManager, IContactMessageService contactMessageService)
+        public AdminController(IAdvisorService advisorService, RoleManager<IdentityRole> roleManager, UserManager<User> userManager, IContactMessageService contactMessageService, IJobService jobService)
         {
             _advisorService = advisorService;
             _roleManager = roleManager;
             _userManager = userManager;
             _contactMessageService = contactMessageService;
+            _jobService = jobService;
         }
+
+        public IActionResult JobList()
+        {
+            return View(_jobService.GetAll());
+        }
+        public IActionResult JobEdit(int jobId)
+        {
+            var job = _jobService.GetById(jobId);
+            return View(job);
+        }
+        [HttpPost]
+        public IActionResult JobEdit(Job job)
+        {
+
+            _jobService.Update(job);
+            return RedirectToAction("JobList","Admin");
+        }
+        [HttpPost]
+        public IActionResult JobDelete(int jobId)
+        {
+            var entity = _jobService.GetById(jobId);
+            _jobService.Delete(entity);
+            return RedirectToAction("JobList","Admin");
+        }
+        public IActionResult JobCreate()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult JobCreate(IFormFile file,Job job)
+        {
+            if (file != null)
+            {
+                var url = JobbManager.MakeUrl(job.JobName);
+                job.JobImg = JobbManager.UploadImage(file, url);
+                _jobService.Create(job);
+                TempData["Message"] = JobbManager.CreateMessage("Yeni Kategori Kaydı", "Kategori ekleme işlemi başarıyla tamamlanmıştır.", "success");
+                return RedirectToAction("JobList","Admin");
+            }
+            TempData["Message"] = JobbManager.CreateMessage("Yeni Kategori Kaydı", "Kategori ekleme işlemi başarılı değil.", "danger");
+            return View(job);
+        }
+
+
         public IActionResult UserList()
         {
             return View(_userManager.Users);
@@ -309,7 +357,7 @@ namespace DanismanProject.WebUI.Controllers
             //    SuccessRate=model.SuccessRate,
             //    IsApproved=model.IsApproved
             //};
-            _advisorService.Update( advisor);
+            _advisorService.Update(advisor);
             return RedirectToAction("AdvisorList");
         }
 
@@ -319,6 +367,8 @@ namespace DanismanProject.WebUI.Controllers
         }
 
       
+
+
 
     }
 }

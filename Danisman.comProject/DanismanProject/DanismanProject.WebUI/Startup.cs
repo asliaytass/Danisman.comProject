@@ -132,15 +132,21 @@ namespace DanismanProject.WebUI
 
                 endpoints.MapControllerRoute(
                     name: "adminuseredit",
-                    pattern: "admin/user/{id}",
+                    pattern: "admin/userEdit/{id}",
                     defaults: new { controller = "Admin", action = "UserEdit" }
                     );
+
 
                 endpoints.MapControllerRoute(
                     name: "adminrolelist",
                     pattern: "admin/role/list",
                     defaults: new { controller = "Admin", action = "RoleList" }
                     );
+                endpoints.MapControllerRoute(
+                name: "adminroldelete",
+                pattern: "admin/roldelete/{id}",
+                defaults: new { controller = "Admin", action = "UserDelete" }
+                );
 
                 endpoints.MapControllerRoute(
                     name: "adminrolecreate",
@@ -153,24 +159,17 @@ namespace DanismanProject.WebUI
                     pattern: "admin/role/{id}",
                     defaults: new { controller = "Admin", action = "RoleEdit" }
                     );
+              
+
+
+
+
 
                 endpoints.MapControllerRoute(
-                   name: "adminrolelist",
-                   pattern: "admin/role/list",
-                   defaults: new { controller = "Admin", action = "RoleList" }
-                   );
-
-                endpoints.MapControllerRoute(
-                  name: "adminroleedit",
-                  pattern: "admin/role/{id}",
-                  defaults: new { controller = "Admin", action = "RoleEdit" }
-                  );
-
-                endpoints.MapControllerRoute(
-                   name: "adminrolecreate",
-                   pattern: "admin/role/create",
-                   defaults: new { controller = "Admin", action = "RoleCreate" }
-                   );
+                 name: "jobedit",
+                 pattern: "admin/jobedit/{jobId}",
+                 defaults: new { controller = "Admin", action = "JobEdit" }
+                 );
 
 
                 endpoints.MapControllerRoute(

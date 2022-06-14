@@ -15,6 +15,8 @@ namespace DanismanProject.Business.Abstract
         void Update(Job entity);
         void Delete(Job entity);
         Job GetJobDetail(string jobName);
+        void UpdateJob(Job entity);
+
 
     }
 }

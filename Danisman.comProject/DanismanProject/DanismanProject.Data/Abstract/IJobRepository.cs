@@ -10,6 +10,7 @@ namespace DanismanProject.Data.Abstract
     public interface IJobRepository : IRepository<Job>
     {
         Job GetJobDetail(string jobName);
+        void UpdateJob(Job entity);
  
     }
 }

@@ -1,12 +1,18 @@
-﻿@model IEnumerable<IdentityRole>
+﻿
+@{
+    ViewData["Title"] = "RoleList";
+    Layout = "~/Views/Shared/_HesabımLayout.cshtml";
+}
+
+@model IEnumerable<IdentityRole>
     <div class="container">
 
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 mt-3">
                 <h6 class="display-4">Admin Roles Managament</h6>
                 <hr />
-                <a href="/admin/rolecreate" class="btn btn-sm btn-primary">Create Role</a>
+                
                 <table class="table table-bordered mt-2">
                     <thead>
                         <tr>
@@ -28,7 +34,7 @@
                                     <td>
                                         <a href="/admin/roleedit/@role.Id" class="btn btn-sm btn-primary mr-1">Edit</a>
 
-                                        <form action="/Admin/role/delete" method="post" class="d-inline">
+                                        <form action="/Admin/roledelete" method="post" class="d-inline">
                                             <input type="hidden" name="roleId" value="@role.Id" />
                                             <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                                         </form>
@@ -53,3 +59,4 @@
             </div>
         </div>
     </div>
+

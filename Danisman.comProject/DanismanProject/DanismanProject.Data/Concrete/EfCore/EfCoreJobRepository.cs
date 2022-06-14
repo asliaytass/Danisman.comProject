@@ -20,5 +20,17 @@ namespace DanismanProject.Data.Concrete.EfCore
                    
             }
         }
+
+        public void UpdateJob(Job entity)
+        {
+            using (var context = new DanismanContext())
+            {
+                context.Jobs.Where(i => i.JobName == entity.JobName).FirstOrDefault();
+                context.Update(entity);
+                context.SaveChanges();
+              
+
+            }
+        }
     }
 }

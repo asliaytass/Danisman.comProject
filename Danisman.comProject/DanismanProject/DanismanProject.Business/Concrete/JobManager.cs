@@ -18,12 +18,12 @@ namespace DanismanProject.Business.Concrete
         }
         public void Create(Job entity)
         {
-            throw new NotImplementedException();
+            _jobRepository.Create(entity);
         }
 
         public void Delete(Job entity)
         {
-            throw new NotImplementedException();
+            _jobRepository.Delete(entity);
         }
 
         public List<Job> GetAll()
@@ -33,7 +33,7 @@ namespace DanismanProject.Business.Concrete
 
         public Job GetById(int id)
         {
-            throw new NotImplementedException();
+            return _jobRepository.GetById(id);
         }
 
         public Job GetJobDetail(string jobName)
@@ -43,7 +43,12 @@ namespace DanismanProject.Business.Concrete
 
         public void Update(Job entity)
         {
-            throw new NotImplementedException();
+            _jobRepository.Update(entity);
+        }
+
+        public void UpdateJob(Job entity)
+        {
+            _jobRepository.UpdateJob(entity);
         }
     }
 }

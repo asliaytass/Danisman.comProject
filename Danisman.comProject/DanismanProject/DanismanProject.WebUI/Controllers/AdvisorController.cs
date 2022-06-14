@@ -58,7 +58,7 @@ namespace DanismanProject.WebUI.Controllers
                     string name = item.Split('|')[0].ToString();
 
                     advisor.JobId = _jobService.GetJobDetail(name).JobId;
-                    advisor.AdvisorId = userId;
+                    //advisor.AdvisorId = userId;
                 }
             }
             _advisorService.CreateAdvisor(advisor);

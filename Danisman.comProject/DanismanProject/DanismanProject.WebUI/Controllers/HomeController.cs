@@ -1,4 +1,5 @@
 ﻿using DanismanProject.Business.Abstract;
+using DanismanProject.Core;
 using DanismanProject.Entity;
 using DanismanProject.WebUI.EmailServices;
 using DanismanProject.WebUI.Models;
@@ -55,12 +56,12 @@ namespace DanismanProject.WebUI.Controllers
             if (ModelState.IsValid)
             {
                 _contactMessageService.Create(contactMessage);
-                ViewBag.msg = "İşlem başarılı";
+                TempData["Message"] = JobbManager.CreateMessage("Mesaj Gönderme", "Mesaj gönderme işlemi başarılı:) ", "success");
                 return View();
             }
             else
             {
-                ViewBag.msg = "İşlem başarısız";
+                TempData["Message"] = JobbManager.CreateMessage("Mesaj Gönderme", "Mesaj gönderme işlemi başarısız!", "danger");
                 return View();
             }
 

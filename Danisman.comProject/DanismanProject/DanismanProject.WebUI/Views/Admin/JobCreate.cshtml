@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "JobCreate";
+    Layout = "~/Views/Shared/_HesabımLayout.cshtml";
+}
+
+@model Job
+    <div class="container">
+        <h5 class="display-4">Create Job</h5>
+        <hr />
+        <form asp-controller="Admin" asp-action="JobCreate" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-8">
+                 
+                    <div class="form-group row mb-2">
+                        <label class="col-form-label col-sm-3">Job Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" asp-for="JobName" class="form-control" />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group row mb-2">
+                        <label class="col-form-label col-sm-3">Description:</label>
+                        <div class="col-sm-9">
+                            <input type="text" asp-for="JobDescription" class="form-control" />
+               
+                        </div>
+                    </div>
+
+                    <div class="form-group row mb-2">
+                        <label class="col-form-label col-sm-3">Image:</label>
+                        <div class="col-sm-9">
+                            <input type="file" name="file" class="form-control" />
+                     
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row mb-2">
+                        <div class="col-sm-9">
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>

@@ -105,7 +105,7 @@ namespace DanismanProject.WebUI.Controllers
                 await _emailSender.SendEmailAsync(model.Email, "Danisman.com Hesap Onaylama", $"Lütfen email hesabınızı onaylamak için <a href='https://localhost:5001{url}'>tıklayınız.</a>");
                 return RedirectToAction("Login","Account");
             }
-            TempData["Message"] = JobManager.CreateMessage("","Bir sorun oluştu,lütfen tekrar deneyiniz","danger");
+            TempData["Message"] = JobbManager.CreateMessage("","Bir sorun oluştu,lütfen tekrar deneyiniz","danger");
             return View(model);
 
         }
@@ -122,11 +122,11 @@ namespace DanismanProject.WebUI.Controllers
                 var result = await _userManager.ConfirmEmailAsync(user, token);
                 if (result.Succeeded)
                 {
-                    TempData["Message"] = JobManager.CreateMessage("","Hesabınız onaylanmıştır", "success");
+                    TempData["Message"] = JobbManager.CreateMessage("","Hesabınız onaylanmıştır", "success");
                     return View();
                 }
             }
-            TempData["Message"] = JobManager.CreateMessage("","Hesabınız onaylanamadı. Lütfen bilgileri kontrol ederek, yeniden deneyiniz!", "warning");
+            TempData["Message"] = JobbManager.CreateMessage("","Hesabınız onaylanamadı. Lütfen bilgileri kontrol ederek, yeniden deneyiniz!", "warning");
             return View();
         }
 
@@ -147,14 +147,14 @@ namespace DanismanProject.WebUI.Controllers
         {
             if (String.IsNullOrEmpty(email))
             {
-                TempData["Message"] = JobManager.CreateMessage("","Lütfen email adresini yazınız!", "warning");
+                TempData["Message"] = JobbManager.CreateMessage("","Lütfen email adresini yazınız!", "warning");
                 return View();
             }
 
             var user = await _userManager.FindByEmailAsync(email);
             if (user == null)
             {
-                TempData["Message"] = JobManager.CreateMessage("","Böyle bir mail adresi bulunamadı.Lütfen kontrol ederek yeniden deneyiniz.", "warning");
+                TempData["Message"] = JobbManager.CreateMessage("","Böyle bir mail adresi bulunamadı.Lütfen kontrol ederek yeniden deneyiniz.", "warning");
                 return View();
             }
 
@@ -169,7 +169,7 @@ namespace DanismanProject.WebUI.Controllers
                 "MiniShopApp Reset Password",
                 $"Parolanızı yeniden belirlemek için <a href='https://localhost:5001{url}'>tıklayınız.</a>"
                 );
-            TempData["Message"] = JobManager.CreateMessage("","Parola değiştirmeniz için gerekli link  mail adresinize yollanmıştır.", "warning");
+            TempData["Message"] = JobbManager.CreateMessage("","Parola değiştirmeniz için gerekli link  mail adresinize yollanmıştır.", "warning");
             return Redirect("~/");
         }
 
@@ -177,7 +177,7 @@ namespace DanismanProject.WebUI.Controllers
         {
             if (userId == null || token == null)
             {
-                TempData["Message"] = JobManager.CreateMessage("", "Geçersiz İşlem", "danger");
+                TempData["Message"] = JobbManager.CreateMessage("", "Geçersiz İşlem", "danger");
                 return RedirectToAction("Index", "Home");
             }
             var model = new ResetPasswordModel()
@@ -196,18 +196,18 @@ namespace DanismanProject.WebUI.Controllers
             var user = await _userManager.FindByEmailAsync(model.Email);
             if (user == null)
             {
-                TempData["Message"] = JobManager.CreateMessage("","Böyle bir kullanıcı bulunamadı", "warning");
+                TempData["Message"] = JobbManager.CreateMessage("","Böyle bir kullanıcı bulunamadı", "warning");
                 return Redirect("~/");
             }
 
             var result = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
             if (result.Succeeded)
             {
-                TempData["Message"] = JobManager.CreateMessage("","Şifre değiştirme işlemi başarılı", "success");
+                TempData["Message"] = JobbManager.CreateMessage("","Şifre değiştirme işlemi başarılı", "success");
                 return RedirectToAction("Login");
             }
 
-            TempData["Message"]= JobManager.CreateMessage("","İşlem başarısız oldu. Daha sonra tekrar deneyiniz.", "danger");
+            TempData["Message"]= JobbManager.CreateMessage("","İşlem başarısız oldu. Daha sonra tekrar deneyiniz.", "danger");
             return View(model);
         }
 

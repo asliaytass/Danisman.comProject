@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "6cmoaMo3oncB+l4yhD+VDu+z9jEq99Bh1aTAyT24MVhIpoBWgmcGJnm8ACVGmz8+QS3p0As3Y3qWbyWQTOnuGw==",
+  "dgSpecHash": "TPGPVS8E9qgKkVQEyWYICENRXLAtK4s3+bKOWFzV3tTBzfAK1kl3V417rTYrN50XOhlbJVbPBsNLpSiypy3Orw==",
   "success": true,
   "projectFilePath": "C:\\Users\\MONSTER\\Desktop\\DanismanProject\\DanismanProject.Core\\DanismanProject.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MONSTER\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\MONSTER\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\MONSTER\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\MONSTER\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\MONSTER\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
   ],
   "logs": []
 }

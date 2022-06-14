@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,8 @@ namespace DanismanProject.Entity
 {
     public class Advisor
     {
-        public string AdvisorId { get; set; }
+        
+        public int AdvisorId { get; set; }
         public string AdvisorName { get; set; }
         public string AdvisorSurname { get; set; }      
         public string AdvisorMail { get; set; }       

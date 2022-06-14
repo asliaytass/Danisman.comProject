@@ -18,8 +18,9 @@ namespace DanismanProject.Data.Migrations
 
             modelBuilder.Entity("DanismanProject.Entity.Advisor", b =>
                 {
-                    b.Property<string>("AdvisorId")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("AdvisorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("AdvisorAbout")
                         .HasColumnType("TEXT");
@@ -80,13 +81,17 @@ namespace DanismanProject.Data.Migrations
 
             modelBuilder.Entity("DanismanProject.Entity.ContactMessage", b =>
                 {
-                    b.Property<string>("Name")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("MessageId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Email")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Message")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Phone")
@@ -95,7 +100,7 @@ namespace DanismanProject.Data.Migrations
                     b.Property<string>("Surname")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Name");
+                    b.HasKey("MessageId");
 
                     b.ToTable("ContactMessages");
                 });

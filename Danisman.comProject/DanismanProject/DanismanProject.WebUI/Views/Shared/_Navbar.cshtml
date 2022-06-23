@@ -32,23 +32,19 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="MyAccount" asp-action="Index">@User.Identity.Name.ToUpper()</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="/account/logout" class="nav-link">Çıkış Yap</a>
-                        </li>
                     }
                     else
                     {
                         <li class="nav-item">
-                            <a class="nav-link">@User.Identity.Name.ToUpper()</a>
+                            <a class="nav-link" asp-controller="MyAccount" asp-action="Index">@User.Identity.Name.ToUpper()</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="/account/logout" class="nav-link">Çıkış Yap</a>
-                        </li>
+
                     }
 
 
-
-
+                    <li class="nav-item">
+                        <a href="/account/logout" class="nav-link">Çıkış Yap</a>
+                    </li>
 
                 }
 

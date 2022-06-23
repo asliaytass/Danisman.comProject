@@ -361,6 +361,8 @@ namespace DanismanProject.WebUI.Controllers
             return RedirectToAction("AdvisorList");
         }
 
+        
+
         public IActionResult MessageBox()
         {
             return View(_contactMessageService.GetAll());

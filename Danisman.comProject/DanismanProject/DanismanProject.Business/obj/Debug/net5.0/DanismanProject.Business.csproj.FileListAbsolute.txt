@@ -17,7 +17,6 @@ C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\
 C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Business\obj\Debug\net5.0\DanismanProject.Business.csproj.CopyComplete
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Business\bin\Debug\net5.0\DanismanProject.Business.deps.json
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Business\bin\Debug\net5.0\DanismanProject.Business.dll
-C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Business\bin\Debug\net5.0\ref\DanismanProject.Business.dll
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Business\bin\Debug\net5.0\DanismanProject.Business.pdb
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Business\bin\Debug\net5.0\DanismanProject.Data.dll
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Business\bin\Debug\net5.0\DanismanProject.Entity.dll
@@ -32,3 +31,4 @@ C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Business\obj\Debug\net5
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Business\obj\Debug\net5.0\DanismanProject.Business.dll
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Business\obj\Debug\net5.0\ref\DanismanProject.Business.dll
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Business\obj\Debug\net5.0\DanismanProject.Business.pdb
+C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Business\obj\Debug\net5.0\refint\DanismanProject.Business.dll

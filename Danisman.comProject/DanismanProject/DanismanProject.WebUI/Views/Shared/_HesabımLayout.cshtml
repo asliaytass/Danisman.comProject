@@ -30,7 +30,9 @@
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <span class="font-weight-bold text-white">@User.Identity.Name.ToUpper()</span>
+
+                    <span class="font-weight-bold text-white">@User.Identity.Name</span>
+                    
                 </div>
 
                 <!-- Sidebar Menu -->
@@ -38,93 +40,105 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
     with font-awesome or any other icon font library -->
-                      
 
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-layer-group"></i>
-                                <p>
-                                    Kategoriler
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a asp-controller="Admin" asp-action="JobList" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Kategori Detayları</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a asp-controller="Admin" asp-action="JobCreate" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Yeni Kategori Oluştur</p>
-                                    </a>
-                                </li>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-layer-group"></i>
+                                    <p>
+                                        Kategoriler
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a asp-controller="Admin" asp-action="JobList" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Kategori Detayları</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-controller="Admin" asp-action="JobCreate" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Yeni Kategori Oluştur</p>
+                                        </a>
+                                    </li>
 
-                            </ul>
-                        </li>
-
-
-
-                        <li class="nav-item">
-                            <a asp-controller="Admin" asp-action="AdvisorList" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>Danışmanlar</p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-user"></i>
-                                <p>
-                                    Üyeler
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a asp-controller="Admin" asp-action="UserList" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Üye Detayları</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/admin/user/create" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Yeni Üye Oluştur</p>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </li>
+                                </ul>
+                            </li>
 
 
 
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-chart-pie"></i>
-                                <p>
-                                    Roller
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="/admin/rolelist" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Rol Detayları</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/admin/rolecreate" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Yeni Rol Oluştur</p>
-                                    </a>
-                                </li>
+                            <li class="nav-item">
+                                <a asp-controller="Admin" asp-action="AdvisorList" class="nav-link">
+                                    <i class="nav-icon fas fa-th"></i>
+                                    <p>Danışmanlar</p>
+                                </a>
+                            </li>
 
-                            </ul>
-                        </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-user"></i>
+                                    <p>
+                                        Üyeler
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a asp-controller="Admin" asp-action="UserList" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Üye Detayları</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/admin/user/create" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Yeni Üye Oluştur</p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+
+
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-chart-pie"></i>
+                                    <p>
+                                        Roller
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="/admin/rolelist" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Rol Detayları</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/admin/rolecreate" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Yeni Rol Oluştur</p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        }
+
+                        else
+                        {
+                            <li class="nav-item">
+                                <a asp-controller="MyAccount" asp-action="UserAccount" class="nav-link">
+                                    <i class="nav-icon far fa-envelope"></i>
+                                    <p>Hesap Bilgilerim</p>
+                                </a>
+                            </li>
+                        }
 
                         <li class="nav-item">
                             <a asp-controller="Admin" asp-action="MessageBox" class="nav-link">

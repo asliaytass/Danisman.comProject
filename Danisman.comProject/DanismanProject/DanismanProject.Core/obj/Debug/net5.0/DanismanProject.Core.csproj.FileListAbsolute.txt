@@ -12,7 +12,6 @@ C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\
 C:\Users\MONSTER\Desktop\KURS\DanismanSite\DanismanSite_Backend\DanismanProject\DanismanProject.Core\obj\Debug\net5.0\DanismanProject.Core.pdb
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Core\bin\Debug\net5.0\DanismanProject.Core.deps.json
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Core\bin\Debug\net5.0\DanismanProject.Core.dll
-C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Core\bin\Debug\net5.0\ref\DanismanProject.Core.dll
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Core\bin\Debug\net5.0\DanismanProject.Core.pdb
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Core\obj\Debug\net5.0\DanismanProject.Core.csproj.AssemblyReference.cache
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Core\obj\Debug\net5.0\DanismanProject.Core.GeneratedMSBuildEditorConfig.editorconfig
@@ -22,3 +21,4 @@ C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Core\obj\Debug\net5.0\D
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Core\obj\Debug\net5.0\DanismanProject.Core.dll
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Core\obj\Debug\net5.0\ref\DanismanProject.Core.dll
 C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Core\obj\Debug\net5.0\DanismanProject.Core.pdb
+C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.Core\obj\Debug\net5.0\refint\DanismanProject.Core.dll

@@ -63,7 +63,9 @@ using DanismanProject.Core;
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bb7166bcc9cc1dfb64308367b67ba08e5a42b287", @"/Views/Admin/AdvisorList.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0182077dd178c6e0b02d16efb7673dc389398c30", @"/Views/_ViewImports.cshtml")]
+    #nullable restore
     public class Views_Admin_AdvisorList : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Advisor>>
+    #nullable disable
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Admin", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "AdvisorEdit", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -127,7 +129,7 @@ using DanismanProject.Core;
 #line hidden
 #nullable disable
             WriteLiteral("                        <div class=\"card text-dark bg-light my-4 shadow advisor-card-foradmin\" style=\"width: 21rem;\">\r\n\r\n                            <div class=\"card-header d-flex justify-content-between\">\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7166bcc9cc1dfb64308367b67ba08e5a42b2878057", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7166bcc9cc1dfb64308367b67ba08e5a42b2878103", async() => {
                 WriteLiteral("\r\n                                    <i class=\"fa-solid fa-gear text-secondary fs-5 \"></i>\r\n                                ");
             }
             );
@@ -160,7 +162,7 @@ using DanismanProject.Core;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28710639", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28710685", async() => {
                 WriteLiteral("\r\n                                    <i class=\"fa-solid fa-trash-can text-danger fs-5\"></i>\r\n                                ");
             }
             );
@@ -193,7 +195,7 @@ using DanismanProject.Core;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                            </div>\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28713259", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28713305", async() => {
                 WriteLiteral("\r\n                                <div class=\"card-body d-flex flex-column justify-content-center align-items-center\" style=\"min-height:140px\">\r\n");
 #nullable restore
 #line 36 "C:\Users\MONSTER\Desktop\DanismanProject\DanismanProject.WebUI\Views\Admin\AdvisorList.cshtml"
@@ -204,7 +206,7 @@ using DanismanProject.Core;
 #line hidden
 #nullable disable
                 WriteLiteral("                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28714023", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28714069", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -229,7 +231,7 @@ using DanismanProject.Core;
 #line hidden
 #nullable disable
                 WriteLiteral("                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28715567", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28715613", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -319,7 +321,7 @@ AddHtmlAttributeValue("", 1984, advisor.AdvisorImg, 1984, 19, false);
 #line hidden
 #nullable disable
             WriteLiteral("                        <div class=\"card text-dark bg-warning my-4 shadow advisor-card-foradmin\" style=\"width: 21rem;\">\r\n\r\n                            <div class=\"card-header d-flex justify-content-between\">\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28721192", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28721238", async() => {
                 WriteLiteral("\r\n                                    <i class=\"fa-solid fa-gear text-secondary fs-5 \"></i>\r\n                                ");
             }
             );
@@ -352,7 +354,7 @@ AddHtmlAttributeValue("", 1984, advisor.AdvisorImg, 1984, 19, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                <p class=\"fw-bold\">Onaylı olmayan üye</p>\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28723854", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28723900", async() => {
                 WriteLiteral("\r\n                                    <i class=\"fa-solid fa-trash-can text-danger fs-5\"></i>\r\n                                ");
             }
             );
@@ -405,7 +407,7 @@ WriteAttributeValue("", 3269, advisor.AdvisorId, 3269, 18, false);
 #line hidden
 #nullable disable
             WriteLiteral("                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28727487", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28727533", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -430,7 +432,7 @@ WriteAttributeValue("", 3269, advisor.AdvisorId, 3269, 18, false);
 #line hidden
 #nullable disable
             WriteLiteral("                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28728967", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bb7166bcc9cc1dfb64308367b67ba08e5a42b28729013", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -497,16 +499,26 @@ AddHtmlAttributeValue("", 3888, advisor.AdvisorImg, 3888, 19, false);
             WriteLiteral("        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n");
         }
         #pragma warning restore 1998
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<List<Advisor>> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<List<Advisor>> Html { get; private set; } = default!;
+        #nullable disable
     }
 }
 #pragma warning restore 1591
